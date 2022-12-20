@@ -1,0 +1,475 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Heebo|Oswald|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Chivo|Knewave&display=swap');
+/* animation des images */
+*{box-sizing: border-box }
+img{
+max-width:100%
+width:100%;
+}
+@keyframes animation_slide {
+0% {left:0}
+20%{left:0}/*image1*/
+25%{left:-100%}
+45%{left:-100%}/*image2*/
+50%{left:-200%}
+70%{left:-200%}/*image3*/
+75%{left:-300%}/*image4*/
+95%{left:-300%}
+100%{left:-400%}/*image1*/}
+@-webkit-keyframes animation_slide {
+0% {left:0}
+20%{left:0}/*image1*/
+25%{left:-100%}
+45%{left:-100%}/*image2*/
+50%{left:-200%}
+70%{left:-200%}/*image3*/
+75%{left:-300%}/*image4*/
+95%{left:-300%}
+100%{left:-500%}/*image1*/}
+figure img{
+pointer-events:none;
+width:20%;
+height:130vh;
+object-fit:contain;
+float:left
+}
+
+figure{
+position: relative;
+width: 495%;
+animation: 30s animation_slide infinite;
+
+}
+/* fin animation des images */
+
+/* #808080 gris */
+/* #FFD700 gold */
+
+#contact{
+  font-family: 'Knewave' ;
+  padding-top: 5%;
+  text-align: center;
+}
+#planning{
+   font-family: 'Knewave' ;
+   font-size: 40px;
+  padding-top: 5%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#inscrit{
+  font-family: 'Knewave' ;
+   font-size: 40px;
+  padding-top: 5%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#evaluez{
+   font-family: 'Knewave' ;
+   font-size: 40px;
+  padding-top: 5%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+/* menu */
+nav ul li{
+	display: inline;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444; 
+  text-align: center; 
+  padding: 0;
+  margin: 0; 
+}
+nav li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85em;
+  line-height: 20px;
+  height: 10px; 
+  border-bottom: 0,75px solid blue; 
+} 
+ 
+nav a {
+  text-decoration: none;
+  color: #fff; 
+  
+  display: block;
+  transition: .4s background-color; 
+}
+ 
+nav a:hover {
+  background-color: #808080; 
+  /*color: #FFCC00;*/
+}
+ 
+nav a.active {
+  background-color: #fff;
+  color: black;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  nav li {
+    width: 100px;
+    border-bottom: none;
+    height: 60px;
+    line-height: 50px;
+    font-size: 1,2em;
+  }
+ 
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  nav li {
+    float: left ;
+  }
+  nav ul {
+    overflow: auto;
+    width: 700px;
+    margin: 0 auto;
+  }
+  nav {
+    background-color: #444;
+  }
+
+ a, a:hover {
+ 	text-decoration: none;
+ }
+ /* end menu */
+
+ #titre_principal {
+ 	font-family: 'Knewave';
+ 	font-size: 60px;
+ 	color: #FFD700;
+ 	font-weight: bold;
+ 	letter-spacing: 2px,
+ } 
+
+ /* image de fond */
+ .con-back{
+ 	width: 100%;
+ 	max-width: 100%;
+ }
+
+.back{
+	width:100%;
+	max-width: 100%;
+	position: relative;
+}
+
+.back img {
+	width:100%;
+	max-width: 100%;
+}
+/* msg sur image */
+.msg-back{
+
+	position: absolute;
+	top: 75%;
+	width: 100%;
+	text-align: center;
+}
+.msg-back h1 {
+	color:#FFCC00;
+	text-shadow: 5px 5px 20px #000000;
+  font-family: 'Knewave';
+}
+/* end msg sur image */
+/* end image de fond */
+
+/*bouton image */
+.msg-back .btn-costum{
+	 position: absolute;
+  top: 0%
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:black ;
+  color:  #FFD700;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.msg-back .btn-costum:hover {
+	 background-color: black;
+  color: white;
+}
+/* end bouton image */
+
+body {
+ background-color: black;
+ color:white;
+
+ width: 100%;
+ margin: 10px auto; 
+ background-image:url(../img/fond.png);
+}
+
+body{
+	background-color: black;
+    color:white;
+    width: 100%;
+    margin: 10px auto;  
+	font-size:20px;
+	font-family: 'Raleway', sans-serif;
+	background-image: url(../img/back.jpg) ;
+}
+
+/* tableau */
+table
+{
+border-collapse: collapse; 
+}
+td , th
+{
+border: 5px grey solid;
+} 
+
+/* Page des activités */
+.cours{
+  color:white;
+}
+
+#description{
+  font-family: 'Knewave' ;
+  letter-spacing: 5px;
+  color:#808080;
+}
+
+.separateur{
+height: 3px;
+width:7%;
+border: none;
+box-shadow: none;
+background-color: #FFD700 ;  
+}
+
+#activites{
+  font-family: 'Knewave';
+	text-align:center;
+	padding-top: 5%; 
+}
+
+
+h1{
+	text-transform:uppercase;
+	letter-spacing: 2pt;
+	font-family: 'Heebo';
+	font-size: 40px;
+	text-align: center;
+	color:#FFD700;	
+} 
+
+#titre{
+  font-family: 'Knewave';
+  color:#808080;
+  text-align:center;
+  font-size: 40px;
+}
+
+#log{
+	margin: 0px 0px 0px 0px;
+	width: auto;
+	text-align: left;
+}
+
+h2 {
+font-size-adjust: 34px;
+font-family: 'Alatsi', sans-serif ; 
+}
+p{
+	font-size: 24px;
+}
+
+blockquote {
+	font-size: 24px;
+	font-family: 'Alatsi';
+	
+}
+
+footer{
+  font-family: 'Knewave';
+  color:white;
+  letter-spacing: 2px;
+}
+
+/* bouton reset et submit */
+.bt{
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#FFD700;
+    /* gold: #FFD700;*/
+	font:bold 15px Arial;
+	color: black;
+}
+
+/* bouton s'abonner */
+.sab{
+	width:85px;
+	height:85px;
+	background:#fafafa;
+	box-shadow:2px 2px 8px #aaa;
+	font:bold 13px Arial;
+	border-radius:50%;
+	color:#555;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#Civilite{
+  width: 5%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+input[type=text],[type=tel], [type=password] ,[type=e-mail],[type=email] , textarea {
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input [type=date] , [type=nombre] {
+  width: 5%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+legend{
+	font-size: 25px;
+	font-family: 'Heebo' ;
+	color: #FFD700;
+}
+#heure{
+  font-family: 'Knewave' ;
+   font-size: 30px;
+   color: #808080;
+  letter-spacing: 2px;
+}
+#loc {
+   font-family: 'Knewave' ;
+   font-size: 30px;
+   color: #808080;
+  letter-spacing: 2px;
+}
+.opening-time{
+
+}
+.location {
+	margin :5%;
+}
+
+/* tarifs */
+.pricing-area{
+  margin-top: 25px;
+}
+.single-pricing{
+  position:relative;
+  text-align: center;
+  background-color: #262626;
+  color:#fff;
+  margin: 0 20px ;
+  padding: 30px;
+  border-radius: 3px;
+}
+.head-text{
+  background-color: transparent;
+  border-bottom: 0;
+  padding: 15px 0;
+  border-radius: 3px 3px 0 0;
+}
+.head-text h3{
+  font-family: 'Knewave';
+  margin:0;
+  font-size:25px; 
+  letter-spacing:4px ;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#fafafa;
+}
+.price-area .price-area span {
+  font-weight: 600;
+}
+.price-area{
+  position: relative;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 300;
+  font-size:44px;
+  line-height: 1;
+}
+.price-area span.duratin{
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #888;
+  letter-spacing: 1px;
+  vertical-align: baseline;
+  color: #999;
+  margin: 20px 0 0 3px;
+}
+.price-area:after , .feature-area{
+  border:0;
+  font-family: 'Poppins';
+}
+.feature-area ul{
+  margin:0;
+  padding:15px 0;
+  list-style: none;
+}
+.feature-area li {
+  padding:6px 0;
+  font-size:20px;
+}
+.btn-area{
+  padding:15px 30px;
+}
+
+#tarif{
+  color:white;
+ padding-top: 5%;
+ text-align:center;
+ font-size-adjust: 40px;
+ font-family: 'Knewave', sans-serif; 
+}
+/* fin tarifs */
